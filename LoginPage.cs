@@ -215,5 +215,10 @@ namespace PICKTrainingInc
                 //statusStrip1.Refresh();
             }
         }
+
+        private void statusStrip_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
