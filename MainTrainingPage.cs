@@ -613,6 +613,32 @@ namespace PICKTrainingInc
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void GoBackBut_Click(object sender, EventArgs e)
+        {
+            closeProgram = false;
+
+            this.Close();
+            ChooseTrainerPage tp = new ChooseTrainerPage(dbManager, stateManager);
+            tp.Show();
+        }
+
+        private void DashboardBut_Click(object sender, EventArgs e)
+        {
+            closeProgram = false;
+
+            this.Close();
+            AdminConsole tp = new AdminConsole();
+            tp.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Project-PICK/Project-PICK%22%22");
+        }
     }
 }

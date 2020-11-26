@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainTrainingPage));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbl_answers = new System.Windows.Forms.TableLayoutPanel();
@@ -61,15 +58,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.goback = new ePOSOne.btnProduct.Button_WOC();
             this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.userInfoButton = new Bunifu.Framework.UI.BunifuTileButton();
+            this.DashboardBut = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gitHubButton = new System.Windows.Forms.PictureBox();
             this.userTypeLabel = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tbl_answers.SuspendLayout();
@@ -88,37 +83,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
-            this.userOptionsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1020, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            // 
-            // userOptionsToolStripMenuItem
-            // 
-            this.userOptionsToolStripMenuItem.Name = "userOptionsToolStripMenuItem";
-            this.userOptionsToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
-            this.userOptionsToolStripMenuItem.Text = "User Options";
-            // 
             // Logo
             // 
             this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
             this.Logo.InitialImage = ((System.Drawing.Image)(resources.GetObject("Logo.InitialImage")));
-            this.Logo.Location = new System.Drawing.Point(13, 35);
+            this.Logo.Location = new System.Drawing.Point(13, 12);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(105, 85);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,9 +100,9 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.tbl_answers);
             this.groupBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(666, 142);
+            this.groupBox1.Location = new System.Drawing.Point(666, 131);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(328, 331);
+            this.groupBox1.Size = new System.Drawing.Size(328, 371);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Your Answer";
@@ -154,14 +124,14 @@
             this.tbl_answers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tbl_answers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tbl_answers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbl_answers.Size = new System.Drawing.Size(322, 306);
+            this.tbl_answers.Size = new System.Drawing.Size(322, 346);
             this.tbl_answers.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(8, 7);
+            this.button1.Location = new System.Drawing.Point(8, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 46);
             this.button1.TabIndex = 0;
@@ -174,7 +144,7 @@
             this.gb_stats.Font = new System.Drawing.Font("Rockwell", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_stats.Location = new System.Drawing.Point(198, 131);
             this.gb_stats.Name = "gb_stats";
-            this.gb_stats.Size = new System.Drawing.Size(379, 75);
+            this.gb_stats.Size = new System.Drawing.Size(417, 75);
             this.gb_stats.TabIndex = 5;
             this.gb_stats.TabStop = false;
             this.gb_stats.Text = "Question Statistics";
@@ -205,7 +175,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(361, 52);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(407, 52);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // currentUser
@@ -213,7 +183,7 @@
             this.currentUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.currentUser.AutoSize = true;
             this.currentUser.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentUser.Location = new System.Drawing.Point(143, 0);
+            this.currentUser.Location = new System.Drawing.Point(177, 0);
             this.currentUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentUser.Name = "currentUser";
             this.currentUser.Size = new System.Drawing.Size(77, 13);
@@ -225,7 +195,7 @@
             this.allUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.allUsers.AutoSize = true;
             this.allUsers.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allUsers.Location = new System.Drawing.Point(273, 0);
+            this.allUsers.Location = new System.Drawing.Point(319, 0);
             this.allUsers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.allUsers.Name = "allUsers";
             this.allUsers.Size = new System.Drawing.Size(56, 13);
@@ -237,7 +207,7 @@
             this.totalAnswered.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.totalAnswered.AutoSize = true;
             this.totalAnswered.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalAnswered.Location = new System.Drawing.Point(34, 39);
+            this.totalAnswered.Location = new System.Drawing.Point(57, 39);
             this.totalAnswered.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalAnswered.Name = "totalAnswered";
             this.totalAnswered.Size = new System.Drawing.Size(85, 13);
@@ -249,7 +219,7 @@
             this.totalCorrect.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.totalCorrect.AutoSize = true;
             this.totalCorrect.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalCorrect.Location = new System.Drawing.Point(46, 13);
+            this.totalCorrect.Location = new System.Drawing.Point(69, 13);
             this.totalCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalCorrect.Name = "totalCorrect";
             this.totalCorrect.Size = new System.Drawing.Size(73, 13);
@@ -261,7 +231,7 @@
             this.totalWrong.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.totalWrong.AutoSize = true;
             this.totalWrong.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalWrong.Location = new System.Drawing.Point(50, 26);
+            this.totalWrong.Location = new System.Drawing.Point(73, 26);
             this.totalWrong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalWrong.Name = "totalWrong";
             this.totalWrong.Size = new System.Drawing.Size(69, 13);
@@ -273,7 +243,7 @@
             this.currentUserCorrect.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.currentUserCorrect.AutoSize = true;
             this.currentUserCorrect.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentUserCorrect.Location = new System.Drawing.Point(172, 13);
+            this.currentUserCorrect.Location = new System.Drawing.Point(206, 13);
             this.currentUserCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentUserCorrect.Name = "currentUserCorrect";
             this.currentUserCorrect.Size = new System.Drawing.Size(19, 13);
@@ -285,7 +255,7 @@
             this.currentUserWrong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.currentUserWrong.AutoSize = true;
             this.currentUserWrong.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentUserWrong.Location = new System.Drawing.Point(172, 26);
+            this.currentUserWrong.Location = new System.Drawing.Point(206, 26);
             this.currentUserWrong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentUserWrong.Name = "currentUserWrong";
             this.currentUserWrong.Size = new System.Drawing.Size(19, 13);
@@ -297,7 +267,7 @@
             this.currentUserTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.currentUserTotal.AutoSize = true;
             this.currentUserTotal.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentUserTotal.Location = new System.Drawing.Point(172, 39);
+            this.currentUserTotal.Location = new System.Drawing.Point(206, 39);
             this.currentUserTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentUserTotal.Name = "currentUserTotal";
             this.currentUserTotal.Size = new System.Drawing.Size(19, 13);
@@ -309,7 +279,7 @@
             this.allUserCorrect.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.allUserCorrect.AutoSize = true;
             this.allUserCorrect.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allUserCorrect.Location = new System.Drawing.Point(289, 13);
+            this.allUserCorrect.Location = new System.Drawing.Point(335, 13);
             this.allUserCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.allUserCorrect.Name = "allUserCorrect";
             this.allUserCorrect.Size = new System.Drawing.Size(25, 13);
@@ -321,7 +291,7 @@
             this.allUserWrong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.allUserWrong.AutoSize = true;
             this.allUserWrong.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allUserWrong.Location = new System.Drawing.Point(292, 26);
+            this.allUserWrong.Location = new System.Drawing.Point(338, 26);
             this.allUserWrong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.allUserWrong.Name = "allUserWrong";
             this.allUserWrong.Size = new System.Drawing.Size(19, 13);
@@ -333,7 +303,7 @@
             this.allUserTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.allUserTotal.AutoSize = true;
             this.allUserTotal.Font = new System.Drawing.Font("Rockwell", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allUserTotal.Location = new System.Drawing.Point(289, 39);
+            this.allUserTotal.Location = new System.Drawing.Point(335, 39);
             this.allUserTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.allUserTotal.Name = "allUserTotal";
             this.allUserTotal.Size = new System.Drawing.Size(25, 13);
@@ -362,9 +332,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.pb_question);
             this.groupBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(203, 230);
+            this.groupBox3.Location = new System.Drawing.Point(198, 230);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(412, 275);
+            this.groupBox3.Size = new System.Drawing.Size(417, 275);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Question";
@@ -377,7 +347,7 @@
             this.pb_question.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_question.InitialImage")));
             this.pb_question.Location = new System.Drawing.Point(3, 22);
             this.pb_question.Name = "pb_question";
-            this.pb_question.Size = new System.Drawing.Size(406, 250);
+            this.pb_question.Size = new System.Drawing.Size(411, 250);
             this.pb_question.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_question.TabIndex = 4;
             this.pb_question.TabStop = false;
@@ -403,14 +373,14 @@
             // 
             // lbl_welcome
             // 
-            this.lbl_welcome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_welcome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_welcome.AutoSize = true;
-            this.lbl_welcome.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(130)))), ((int)(((byte)(19)))));
-            this.lbl_welcome.Location = new System.Drawing.Point(49, 28);
+            this.lbl_welcome.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_welcome.ForeColor = System.Drawing.Color.Coral;
+            this.lbl_welcome.Location = new System.Drawing.Point(5, 45);
             this.lbl_welcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_welcome.Name = "lbl_welcome";
-            this.lbl_welcome.Size = new System.Drawing.Size(357, 29);
+            this.lbl_welcome.Size = new System.Drawing.Size(420, 35);
             this.lbl_welcome.TabIndex = 8;
             this.lbl_welcome.Text = "Test Class Training For Test User";
             // 
@@ -419,15 +389,15 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.goback);
             this.panel1.Controls.Add(this.bunifuTileButton3);
-            this.panel1.Controls.Add(this.bunifuTileButton2);
-            this.panel1.Controls.Add(this.userInfoButton);
+            this.panel1.Controls.Add(this.DashboardBut);
             this.panel1.Controls.Add(this.Logo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(155, 493);
+            this.panel1.Size = new System.Drawing.Size(155, 517);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // goback
             // 
@@ -437,7 +407,7 @@
             this.goback.FlatAppearance.BorderSize = 0;
             this.goback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goback.ForeColor = System.Drawing.Color.Transparent;
-            this.goback.Location = new System.Drawing.Point(13, 120);
+            this.goback.Location = new System.Drawing.Point(13, 230);
             this.goback.Margin = new System.Windows.Forms.Padding(2);
             this.goback.Name = "goback";
             this.goback.OnHoverBorderColor = System.Drawing.Color.DarkGreen;
@@ -462,50 +432,32 @@
             this.bunifuTileButton3.ImagePosition = 14;
             this.bunifuTileButton3.ImageZoom = 50;
             this.bunifuTileButton3.LabelPosition = 29;
-            this.bunifuTileButton3.LabelText = "Settings";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(13, 346);
+            this.bunifuTileButton3.LabelText = "Exit";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(13, 407);
             this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(100, 84);
+            this.bunifuTileButton3.Size = new System.Drawing.Size(105, 97);
             this.bunifuTileButton3.TabIndex = 9;
             // 
-            // bunifuTileButton2
+            // DashboardBut
             // 
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.bunifuTileButton2.color = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
-            this.bunifuTileButton2.ImagePosition = 14;
-            this.bunifuTileButton2.ImageZoom = 50;
-            this.bunifuTileButton2.LabelPosition = 29;
-            this.bunifuTileButton2.LabelText = "User Stats";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(13, 244);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(100, 95);
-            this.bunifuTileButton2.TabIndex = 8;
-            // 
-            // userInfoButton
-            // 
-            this.userInfoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.userInfoButton.color = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.userInfoButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.userInfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userInfoButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userInfoButton.ForeColor = System.Drawing.Color.White;
-            this.userInfoButton.Image = ((System.Drawing.Image)(resources.GetObject("userInfoButton.Image")));
-            this.userInfoButton.ImagePosition = 14;
-            this.userInfoButton.ImageZoom = 50;
-            this.userInfoButton.LabelPosition = 29;
-            this.userInfoButton.LabelText = "User Info";
-            this.userInfoButton.Location = new System.Drawing.Point(10, 150);
-            this.userInfoButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.userInfoButton.Name = "userInfoButton";
-            this.userInfoButton.Size = new System.Drawing.Size(103, 86);
-            this.userInfoButton.TabIndex = 7;
+            this.DashboardBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.DashboardBut.color = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.DashboardBut.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.DashboardBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DashboardBut.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardBut.ForeColor = System.Drawing.Color.White;
+            this.DashboardBut.Image = ((System.Drawing.Image)(resources.GetObject("DashboardBut.Image")));
+            this.DashboardBut.ImagePosition = 14;
+            this.DashboardBut.ImageZoom = 50;
+            this.DashboardBut.LabelPosition = 29;
+            this.DashboardBut.LabelText = "Dashboard";
+            this.DashboardBut.Location = new System.Drawing.Point(13, 111);
+            this.DashboardBut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DashboardBut.Name = "DashboardBut";
+            this.DashboardBut.Size = new System.Drawing.Size(105, 95);
+            this.DashboardBut.TabIndex = 8;
+            this.DashboardBut.Click += new System.EventHandler(this.DashboardBut_Click);
             // 
             // panel2
             // 
@@ -516,27 +468,29 @@
             this.panel2.Controls.Add(this.lbl_welcome);
             this.panel2.Controls.Add(this.usernameLabel);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(155, 24);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(155, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(844, 80);
+            this.panel2.Size = new System.Drawing.Size(865, 104);
             this.panel2.TabIndex = 11;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(505, 25);
+            this.pictureBox3.Location = new System.Drawing.Point(568, 31);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // gitHubButton
             // 
             this.gitHubButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gitHubButton.Image = ((System.Drawing.Image)(resources.GetObject("gitHubButton.Image")));
-            this.gitHubButton.Location = new System.Drawing.Point(434, 25);
+            this.gitHubButton.Location = new System.Drawing.Point(511, 31);
             this.gitHubButton.Name = "gitHubButton";
             this.gitHubButton.Size = new System.Drawing.Size(43, 37);
             this.gitHubButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -550,7 +504,7 @@
             this.userTypeLabel.AutoSize = true;
             this.userTypeLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userTypeLabel.ForeColor = System.Drawing.Color.Silver;
-            this.userTypeLabel.Location = new System.Drawing.Point(654, 47);
+            this.userTypeLabel.Location = new System.Drawing.Point(742, 63);
             this.userTypeLabel.Name = "userTypeLabel";
             this.userTypeLabel.Size = new System.Drawing.Size(94, 17);
             this.userTypeLabel.TabIndex = 3;
@@ -561,8 +515,8 @@
             this.usernameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(130)))), ((int)(((byte)(19)))));
-            this.usernameLabel.Location = new System.Drawing.Point(653, 19);
+            this.usernameLabel.ForeColor = System.Drawing.Color.Coral;
+            this.usernameLabel.Location = new System.Drawing.Point(706, 31);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(133, 20);
             this.usernameLabel.TabIndex = 2;
@@ -573,7 +527,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(582, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(634, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -591,14 +545,10 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.gb_stats);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainTrainingPage";
             this.Text = "MainTrainingPage";
             this.Load += new System.EventHandler(this.MainTrainingPage_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.tbl_answers.ResumeLayout(false);
@@ -624,10 +574,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem userOptionsToolStripMenuItem;
         private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox gb_stats;
@@ -656,8 +602,7 @@
         private ePOSOne.btnProduct.Button_WOC goback;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
-        private Bunifu.Framework.UI.BunifuTileButton userInfoButton;
+        private Bunifu.Framework.UI.BunifuTileButton DashboardBut;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox gitHubButton;

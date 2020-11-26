@@ -168,5 +168,14 @@ namespace PICKTrainingInc
                 closeProgram = true;
             }
         }
+
+        private void goback_btn1_Click(object sender, EventArgs e)
+        {
+            closeProgram = false;
+
+            this.Close();
+            LoginPage sp = new LoginPage(dbManager, stateManager);
+            sp.Show();
+        }
     }
 }

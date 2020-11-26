@@ -51,11 +51,11 @@
             // 
             this.sloganLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sloganLabel.AutoSize = true;
-            this.sloganLabel.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sloganLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(130)))), ((int)(((byte)(19)))));
-            this.sloganLabel.Location = new System.Drawing.Point(244, 126);
+            this.sloganLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sloganLabel.ForeColor = System.Drawing.Color.Coral;
+            this.sloganLabel.Location = new System.Drawing.Point(244, 130);
             this.sloganLabel.Name = "sloganLabel";
-            this.sloganLabel.Size = new System.Drawing.Size(433, 75);
+            this.sloganLabel.Size = new System.Drawing.Size(455, 90);
             this.sloganLabel.TabIndex = 1;
             this.sloganLabel.Text = "Skip the classroom and\r\n train from anywhere in the world with an \r\nLMS for the m" +
     "odern workforce.\r\n";
@@ -65,11 +65,11 @@
             // 
             this.sloganLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sloganLabel2.AutoSize = true;
-            this.sloganLabel2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sloganLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(130)))), ((int)(((byte)(19)))));
-            this.sloganLabel2.Location = new System.Drawing.Point(244, 48);
+            this.sloganLabel2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sloganLabel2.ForeColor = System.Drawing.Color.Coral;
+            this.sloganLabel2.Location = new System.Drawing.Point(269, 49);
             this.sloganLabel2.Name = "sloganLabel2";
-            this.sloganLabel2.Size = new System.Drawing.Size(390, 29);
+            this.sloganLabel2.Size = new System.Drawing.Size(382, 35);
             this.sloganLabel2.TabIndex = 2;
             this.sloganLabel2.Text = "Easily Train Your Remote Team\r\n";
             // 

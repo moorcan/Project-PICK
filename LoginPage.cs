@@ -59,7 +59,7 @@ namespace PICKTrainingInc
                 tp.Show();
             }
             else {
-                statusStrip.Text = "Wrong Username/Password!";
+                //statusStrip.Text = "Wrong Username/Password!";
                 //statusStrip1.Refresh();
             }
 
@@ -211,12 +211,17 @@ namespace PICKTrainingInc
             }
             else
             {
-                statusStrip.Text = "Wrong Username/Password!";
+                //statusStrip.Text = "Wrong Username/Password!";
                 //statusStrip1.Refresh();
             }
         }
 
         private void statusStrip_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer2_ContentPanel_Load(object sender, EventArgs e)
         {
 
         }

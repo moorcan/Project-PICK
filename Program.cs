@@ -32,7 +32,7 @@ namespace PICKTrainingInc
 
             //stateManager.setUserName("admin");
             Application.Run(new SplashPage(dbManager, stateManager));
-
+            //Application.Run(new AdminConsole());
             //debug stuff
             ////stateManager.setUserName("admin", "password");
             ////Application.Run(new ChooseTrainerPage(dbManager, stateManager));

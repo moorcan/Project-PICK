@@ -265,5 +265,15 @@ namespace PICKTrainingInc
             LoginPage lp = new LoginPage(dbManager, stateManager);
             lp.Show();
         }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void gitHubButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Project-PICK/Project-PICK%22%22");
+        }
     }
 }
